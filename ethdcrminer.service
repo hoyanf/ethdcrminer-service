@@ -4,7 +4,7 @@ Description=ethdcrminer Dual Ethereum Decred Miner
 [Service]
 Type=forking
 RemainAfterExit=yes
-User=yohan
+User=root
 WorkingDirectory=/opt/ethdcrminer
 ExecStart=/usr/bin/screen -d -m -S ethdcrminer /opt/ethdcrminer/ethdcrminer
 ExecStop=/usr/bin/killall -w -s 2 ethdcrminer
