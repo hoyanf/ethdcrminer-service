@@ -6,7 +6,7 @@ Type=forking
 RemainAfterExit=yes
 User=root
 WorkingDirectory=/opt/ethdcrminer
-ExecStart=/usr/bin/screen -d -m -S ethdcrminer /opt/ethdcrminer/ethdcrminer
+ExecStart=/usr/bin/screen -dmS ethdcrminer /opt/ethdcrminer/ethdcrminer
 ExecStop=/usr/bin/killall -w -s 2 ethdcrminer
 KillMode=none
 
